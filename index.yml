@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantom Realms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f8fafc;
+      scroll-behavior: smooth;
+    }
+    header.hero {
+      background: url('https://i.imgur.com/CH5PZDC.png') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 4em;
+      margin: 0;
+      color: #38bdf8;
+    }
+    .ip {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    .buttons a {
+      margin: 10px;
+      padding: 12px 24px;
+      border: 2px solid #38bdf8;
+      color: #38bdf8;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+    .buttons a:hover {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2.5em;
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+    .features-grid, .vote-buttons, .staff-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .feature-box, .vote-btn, .staff-card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #0ea5e9;
+      transition: transform 0.2s ease;
+    }
+    .feature-box:hover, .vote-btn:hover, .staff-card:hover {
+      transform: scale(1.05);
+    }
+    .vote-btn {
+      color: #f8fafc;
+      text-decoration: none;
+      width: 160px;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 960px;
+      height: 600px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 8px;
+    }
+    .staff-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    .staff-card h3 {
+      margin: 10px 0 5px 0;
+    }
+    .discord .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #5865F2;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    footer {
+      padding: 20px;
+      background: #0f172a;
+      text-align: center;
+      font-size: 0.9em;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay">
+      <h1>Quantom Realms</h1>
+      <p class="ip">IP: play.quantomrealms.xyz | Java & Bedrock | 1.8 - 1.21.8</p>
+      <p id="player-count">Players Online: Loading...</p>
+      <div class="buttons">
+        <a href="#about">About</a>
+        <a href="#vote">Vote</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>Welcome Adventurer!</h2>
+    <p>Quantom Realms is a fantasy-themed survival experience that blends magic, technology, and adventure! Build your empire, defeat custom bosses, and rise in power through ranks, levels, and skills!</p>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="feature-box">🔐 Land Claiming</div>
+      <div class="feature-box">⚔️ PvP Arena</div>
+      <div class="feature-box">🧙 Custom Armor & Enchants</div>
+      <div class="feature-box">👹 Boss Fights</div>
+      <div class="feature-box">🎮 Skills & Leveling</div>
+      <div class="feature-box">🎉 Community Events</div>
+    </div>
+  </section>
+
+  <section id="vote">
+    <h2>Vote for Rewards</h2>
+    <p>Support the server and earn in-game perks and vote crates!</p>
+    <div class="vote-buttons">
+      <a href="https://topg.org/minecraft-servers/server-674757" class="vote-btn" target="_blank">TopG</a>
+      <a href="https://minecraftservers.org/server/677085" class="vote-btn" target="_blank">MinecraftServers</a>
+      <a href="https://mc-servers.com/vote/6004" class="vote-btn" target="_blank">MC-Servers</a>
+      <a href="https://topminecraftservers.org/vote/41322" class="vote-btn" target="_blank">TopMCServers</a>
+      <a href="https://minecraft-mp.com/server/346992/vote/" class="vote-btn" target="_blank">Minecraft-MP</a>
+    </div>
+  </section>
+
+  <section id="store">
+    <h2>Server Store</h2>
+    <p>Support Quantom Realms and unlock exclusive kits, ranks, and cosmetics!</p>
+    <iframe src="https://arcane-realms.tebex.io/"></iframe>
+  </section>
+
+  <section id="staff">
+    <h2>Meet the Staff</h2>
+    <div class="staff-grid">
+      <div class="staff-card">
+        <img src="https://minotar.net/avatar/owaila256/100.png" alt="owaila256">
+        <h3>owaila256</h3><p>Owner</p>
+      </div>
+      <div class="staff-card">
+        <img src="https://minotar.net/avatar/Ashketamine/100.png" alt="Ashketamine">
+        <h3>Ashketamine</h3><p>Co-Owner</p>
+      </div>
+      <div class="staff-card">
+        <img src="https://minotar.net/avatar/Sebastiaaann/100.png" alt="Sebastiaaann">
+        <h3>Sebastiaaann</h3><p>Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="discord">
+    <h2>Join the Community</h2>
+    <a href="https://discord.gg/MRDkwrX9C7" class="btn" target="_blank">Join Discord</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Quantom Realms | Built for players, by players.</p>
+  </footer>
+
+  <script>
+    // Simulated player count (you can replace this with an API if you use plugins like Plan, etc.)
+    document.getElementById("player-count").innerText = "Players Online: 27";
+  </script>
+
+</body>
+</html>
